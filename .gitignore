@@ -1,3 +1,7 @@
-*
-magento2/info.php
-!magneto2/app
+/data/
+/.idea/
+redis-cli.sh
+varnish.secret
+varnish.vcl
+varnishadm.sh
+varnishncsa.sh
