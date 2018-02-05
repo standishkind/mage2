@@ -1,0 +1,15 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="kind_ingredients_ingredient_listing_data_source" xsi:type="string">Kind\Ingredients\Model\ResourceModel\Ingredient\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Kind\Ingredients\Model\ResourceModel\Ingredient\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">kind_ingredients</argument>
+            <argument name="resourceModel" xsi:type="string">Kind\Ingredients\Model\ResourceModel\Ingrdient</argument>
+        </arguments>
+    </virtualType>
+</config>
